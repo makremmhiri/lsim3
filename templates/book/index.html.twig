@@ -27,10 +27,12 @@
 <ul>
 
 {% for livre in livre %}
-
-<li>{{ livre.titre }} - {{ livre.auteur }}</li>
-<a href="{{ path('book_show', {id: livre.id}) }}">Voir</a>
+    <li>{{ livre.titre }} - {{ livre.auteur }}</li>
+    <a href="{{ path('book_show', {id: livre.id}) }}">Voir</a>
 {% endfor %}
+
+
+
 {# <li>{{aa}}</li> #}
 </ul>
 

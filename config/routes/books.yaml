@@ -1,12 +1,13 @@
-# book_edit:
-# path: /livre/{id}/edit
-# controller: App\Controller\BookController::edit
-# methods: [GET]
-# requirements:
-# id: '\d+'
-# book_delete:
-# path: /livre/{id}/delete
-# controller: App\Controller\BookController::delete
-# methods: [POST]
-# requirements:
-# id: '\d+'
+book_edit:
+  path: /livre/{id}/edit
+  controller: App\Controller\BookController::edit
+  methods: [GET]
+  requirements:
+    id: '\d+'
+book_delete:
+  path: /livre/{id}/delete
+  controller: App\Controller\BookController::delete
+  methods: [POST]
+  requirements:
+    id: '\d+'
+

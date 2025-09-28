@@ -27,15 +27,15 @@ final class BookController extends AbstractController
         // return $this->render('book/index.html.twig');
         return $this->render('book/index.html.twig', ['livre' => $livres]);//,'aa'=>$a
     }
-    // public function edit(int $id): Response
-    // {
-    // return new Response("<h2>Édition du livre #$id</h2>");
-    // }
+    public function edit(int $id): Response
+    {
+    return new Response("<h2>Édition du livre #$id</h2>");
+    }
 
-    // public function delete(int $id): Response
-    // {
-    // return new Response("<h2>Suppression du livre #$id</h2>");
-    // }
+    public function delete(int $id): Response
+    {
+    return new Response("<h2>Suppression du livre #$id</h2>");
+    }
 
     #[Route('/livre/{id}', name: 'book_show')]
     public function show(int $id): Response
