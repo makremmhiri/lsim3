@@ -40,6 +40,16 @@ final class BookController extends AbstractController
     #[Route('/livre/{id}', name: 'book_show')]
     public function show(int $id): Response
     {
-    return $this->render('book/show.html.twig', ['id' => $id]);
+        return $this->render('book/show.html.twig', ['id' => $id]);
     }
+
+    public function update(int $id): Response
+    {
+        return new Response("<h2>Mise à jour du livre #$id</h2>");
+    }
+
+
+    // #[Route('/livre/{id}/update', name: 'book_update')]
+    
 }
+

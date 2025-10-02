@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Détail du livre{% endblock %}
+
+{% block body %}
+<h2>Détail du livre #{{ id }}</h2>
+<p>Affichage de la fiche du livre.</p>
+
+<!-- Lien pour éditer le livre -->
+<a href="{{ path('book_update', { id: id }) }}" class="btn btn-primary">
+    Éditer ce livre
+</a>
+
+<form action="{{ path('book_delete', { id: id }) }}" method="post">
+    <button type="submit">Supprimer ce livre</button>
+</form>
+
+{% endblock %}
+
+ Mise à jour du livre #X

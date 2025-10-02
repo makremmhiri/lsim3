@@ -10,4 +10,11 @@ book_delete:
   methods: [POST]
   requirements:
     id: '\d+'
+    
+book_update:
+  path: /livre/{id}/update
+  controller: App\Controller\BookController::update
+  methods: [POST, PUT]
+  requirements:
+    id: '\d+'
 
